@@ -1,33 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ola mundo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silksong - Página de Apresentação</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
- <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/SyyNDebPKQE?autoplay=1&mute=1&loop=1&playlist=SyyNDebPKQE&start=6"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
-    id="video-fundo"
-></iframe>
+  <main class="container">
 
+    <!-- Vídeo de fundo -->
+    <div class="video-background">
+      <iframe 
+        src="https://www.youtube.com/embed/pFAknD_9U7c?autoplay=1&mute=1&loop=1&playlist=pFAknD_9U7c&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1" 
+        title="Hollow Knight Silksong Trailer"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+      <div class="video-overlay"></div>
+    </div>
 
+    <!-- Conteúdo -->
+    <div class="content">
+      <div class="hero">
+        <h1 class="gradient-text">SILKSONG</h1>
+        <p class="subtitle">Hollow Knight</p>
+        <div class="divider"></div>
+      </div>
 
-    <h1 id="ola"></h1>
-    <h1 id="nome1"></h1>
-    <script>
-        let nome = "ola"
-        let nome1 = "_canoafurada"
-        document.getElementById("ola").textContent = "topzera"
-        document.getElementById("nome1").textContent = "topzerav2"+nome1
-    </script>
+      <!-- Card de informações -->
+      <div class="card glow">
+        <h2>A Jornada de Hornet Continua</h2>
+        <p>
+          Descubra os segredos do reino de Pharloom como Hornet, a princesa-protetora de Hallownest, 
+          em uma aventura toda nova que a levará aos picos mais altos e às profundezas mais sombrias.
+        </p>
 
+        <div class="grid">
+          <div class="info-box">
+            <h3>Plataformas</h3>
+            <p>PC, Nintendo Switch, PlayStation, Xbox</p>
+          </div>
+          <div class="info-box">
+            <h3>Desenvolvedor</h3>
+            <p>Team Cherry</p>
+          </div>
+          <div class="info-box">
+            <h3>Gênero</h3>
+            <p>Metroidvania</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button onclick="window.open('https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/', '_blank')">🎮 Jogar Agora</button>
+          <button class="outline" onclick="window.open('https://www.youtube.com/watch?v=6XGeJwsUP9c', '_blank')">📺 Assista ao Trailer</button>
+        </div>
+      </div>
+
+      <!-- Recursos -->
+      <div class="grid features">
+        <div class="card small">
+          <h3>⚔️ Combate Aprimorado</h3>
+          <p>Domine novas habilidades e ferramentas como Hornet, com mecânicas de combate refinadas e movimentos únicos.</p>
+        </div>
+        <div class="card small">
+          <h3>🗺️ Reino de Pharloom</h3>
+          <p>Explore um reino vasto e interconectado, repleto de segredos, inimigos únicos e paisagens deslumbrantes.</p>
+        </div>
+        <div class="card small">
+          <h3>🎭 História Épica</h3>
+          <p>Descubra os mistérios de Pharloom através da jornada de Hornet, com uma narrativa envolvente e personagens únicos.</p>
+        </div>
+      </div>
+
+      <!-- Estatísticas -->
+      <div class="card glow">
+        <h2>Conquistas e Estatísticas</h2>
+        <div class="stats">
+          <div><span>150+</span><p>Inimigos Únicos</p></div>
+          <div><span>40+</span><p>Habilidades</p></div>
+          <div><span>50+</span><p>Áreas</p></div>
+          <div><span>100+</span><p>Segredos</p></div>
+        </div>
+      </div>
+
+      <!-- Personagem -->
+      <div class="card">
+        <h2>🕷️ Conheça Hornet</h2>
+        <p>
+          A princesa-protetora de Hallownest retorna como protagonista. Ágil, letal e determinada, 
+          Hornet possui habilidades únicas que a distinguem do Cavaleiro. Com sua agulha e fio de seda, 
+          ela navega por Pharloom com graça mortal.
+        </p>
+        <div class="grid">
+          <div class="info-box">
+            <h4>Habilidades Especiais</h4>
+            <p>Agulha, Fio de Seda, Dash Aéreo</p>
+          </div>
+          <div class="info-box">
+            <h4>Personalidade</h4>
+            <p>Corajosa, Independente, Misteriosa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elementos decorativos -->
+    <div class="decor decor-1"></div>
+    <div class="decor decor-2"></div>
+
+  </main>
 </body>
 </html>
